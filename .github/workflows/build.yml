@@ -20,6 +20,8 @@ jobs:
         working-directory: ./webapp
 
       - name: Lint codebase
+        env:
+          ESLINT_USE_FLAT_CONFIG: false  # Set the environment variable
         run: yarn lint
         working-directory: ./webapp
 
