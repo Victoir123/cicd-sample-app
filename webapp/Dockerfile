@@ -2,7 +2,7 @@ FROM node:alpine
 
 WORKDIR /app
 
-COPY ./package.json ./check/yarn.lock ./
+COPY ./yarn.lock ./package.json ./
 
 RUN yarn install
 
