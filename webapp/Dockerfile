@@ -2,7 +2,9 @@ FROM node:alpine
 
 WORKDIR /app
 
-RUN echo "Current directory: $(pwd) && ls -la"
+
+RUN pwd && ls -la
+
 
 COPY ./yarn.lock ./package.json ./
 
