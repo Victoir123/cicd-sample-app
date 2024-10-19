@@ -20,7 +20,7 @@ jobs:
         working-directory: ./webapp
 
       - name: Lint codebase
-        env:
-          ESLINT_USE_OLD_CONFIG: true # Set the environment variable here
+        env: # Set environment variables for the linting step
+          ESLINT_USE_FLAT_CONFIG: false # Force ESLint to use the older config style
         run: yarn lint
         working-directory: ./webapp
