@@ -29,6 +29,6 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           context: .
-          file: ./Dockerfile
+          file: ./webapp/Dockerfile  # Specify the path to the Dockerfile
           tags: victor559/webapp:latest
           push: false  # Do not push the image to Docker Hub yet
